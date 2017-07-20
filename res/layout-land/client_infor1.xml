@@ -1,0 +1,836 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="MUSONI LOAN APPLICATION FORM" 
+        android:gravity="right"/>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView1"
+        android:text="CUSTOMER DETAILS"
+        android:gravity="left" />
+   <LinearLayout 
+       
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    android:layout_below="@+id/textView2" >
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+       android:orientation="horizontal">
+       <RelativeLayout 
+           android:layout_width="0dp"
+           android:layout_height="match_parent"
+           android:layout_weight="1"
+           android:layout_marginLeft="5dp">
+           <TextView 
+               android:id="@+id/namelbl"
+                android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         android:textSize="16sp"
+         android:textColor="#273F9F"
+               android:text="First Name"
+               />
+
+            <EditText
+                android:id="@+id/fname"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/namelbl"
+                android:background="@drawable/text_bg"
+                android:ems="10"
+                android:paddingLeft="3dp"
+                android:textSize="16sp" >
+
+                <requestFocus />
+            </EditText>
+           
+       </RelativeLayout> 
+       
+          <RelativeLayout 
+           android:layout_width="0dp"
+           android:layout_height="match_parent"
+           android:layout_weight="1"
+           android:layout_marginLeft="5dp">
+           <TextView 
+               android:id="@+id/name2lbl"
+                android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         android:textSize="16sp"
+         android:textColor="#273F9F"
+               android:text="Middle Name"
+               />
+
+            <EditText
+                android:id="@+id/mname"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/name2lbl"
+                android:background="@drawable/text_bg"
+                android:ems="10"
+                android:paddingLeft="3dp"
+                android:textSize="16sp" >
+
+                
+            </EditText>
+           
+       </RelativeLayout> 
+       
+          
+         <RelativeLayout 
+           android:layout_width="0dp"
+           android:layout_height="match_parent"
+           android:layout_weight="1"
+           android:layout_marginLeft="5dp">
+
+             <ImageView
+                 android:id="@+id/imageView1"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_centerHorizontal="true"
+                 android:layout_centerVertical="true"
+                 android:src="@drawable/bulb" />
+           
+       </RelativeLayout>  
+       </LinearLayout>
+       
+       
+       <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+       android:orientation="horizontal">
+       <RelativeLayout 
+           android:layout_width="0dp"
+           android:layout_height="match_parent"
+           android:layout_weight="1"
+           android:layout_marginLeft="5dp">
+           <TextView 
+               android:id="@+id/name3lbl"
+                android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         android:textSize="16sp"
+         android:textColor="#273F9F"
+               android:text="Last Name"
+               />
+
+            <EditText
+                android:id="@+id/lname"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/name3lbl"
+                android:background="@drawable/text_bg"
+                android:ems="10"
+                android:paddingLeft="3dp"
+                android:textSize="16sp" >
+
+                <requestFocus />
+            </EditText>
+           
+       </RelativeLayout> 
+       
+          <RelativeLayout 
+           android:layout_width="0dp"
+           android:layout_height="match_parent"
+           android:layout_weight="1"
+           android:layout_marginLeft="5dp">
+            <TextView 
+               android:id="@+id/agelbl"
+                android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+          android:textSize="16sp"
+        
+         android:textColor="#273F9F"
+               android:text="Age"
+               />
+            <EditText
+                android:id="@+id/age"
+                android:layout_width="match_parent"
+       android:layout_height="50dp"
+       android:paddingLeft="3dp"
+        android:layout_below="@+id/agelbl"
+        android:background="@drawable/text_bg"
+        android:inputType="number"
+               android:text=""
+               />
+          <!--  <TextView 
+               android:id="@+id/name2lbl"
+                android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         android:textSize="16sp"
+         android:textColor="#273F9F"
+               android:text="Email"
+               />
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/name2lbl"
+                android:background="@drawable/text_bg"
+                android:ems="10"
+                android:paddingLeft="3dp"
+                android:textSize="16sp" >
+
+                
+            </EditText>-->
+           
+       </RelativeLayout> 
+       
+          
+         <RelativeLayout 
+           android:layout_width="0dp"
+           android:layout_height="match_parent"
+           android:layout_weight="1"
+           android:layout_marginLeft="5dp">
+
+             
+           
+       </RelativeLayout>  
+       </LinearLayout>
+       
+       
+        <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+       android:orientation="horizontal">
+       <RelativeLayout 
+           android:layout_width="0dp"
+           android:layout_height="match_parent"
+           android:layout_weight="1"
+           android:layout_marginLeft="5dp">
+           <TextView 
+               android:id="@+id/idlbl"
+                android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+          android:textSize="16sp"
+         android:textColor="#273F9F"
+               android:text="ID No."
+               />
+            <EditText
+                android:id="@+id/id"
+                android:layout_width="match_parent"
+       android:layout_height="50dp"
+       android:paddingLeft="3dp"
+        android:layout_below="@+id/idlbl"
+        android:inputType="number"
+        android:background="@drawable/text_bg"
+               android:text=""
+               />
+           
+       </RelativeLayout> 
+       
+          <RelativeLayout 
+           android:layout_width="0dp"
+           android:layout_height="match_parent"
+           android:layout_weight="1"
+           android:layout_marginLeft="5dp">
+           <TextView 
+               android:id="@+id/fnlbl"
+                android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         android:textSize="16sp"
+         android:textColor="#273F9F"
+               android:text="Phone No."
+               />
+            <EditText
+                android:id="@+id/fone"
+                android:layout_width="match_parent"
+       android:layout_height="50dp"
+        android:layout_below="@+id/fnlbl"
+        android:paddingLeft="3dp"
+        android:inputType="number"
+        android:background="@drawable/text_bg"
+               android:text=""
+               />
+           
+       </RelativeLayout> 
+       
+          
+         <RelativeLayout 
+           android:layout_width="0dp"
+           android:layout_height="match_parent"
+           android:layout_weight="1"
+           android:layout_marginLeft="5dp">            
+           
+       </RelativeLayout>  
+       </LinearLayout>
+       
+        
+        
+        
+        <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+       android:orientation="horizontal">
+         
+        <LinearLayout 
+            android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+       android:orientation="horizontal">
+            
+            
+       <RelativeLayout 
+           android:layout_width="0dp"
+           android:layout_height="match_parent"
+           android:layout_weight="1"
+           android:layout_marginLeft="5dp">
+           <TextView 
+               android:id="@+id/genderlbl"
+                android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+          android:textSize="16sp"
+         android:textColor="#273F9F"
+               android:text="Gender"
+               />
+            <Spinner
+                android:id="@+id/gender"
+                android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingLeft="3dp"
+        android:layout_below="@+id/genderlbl"
+        
+        android:gravity="center"
+        android:background="@android:drawable/btn_dropdown"
+        android:entries="@array/gender"
+               />
+           
+       </RelativeLayout> 
+       
+         <!--  <RelativeLayout 
+           android:layout_width="0dp"
+           android:layout_height="match_parent"
+           android:layout_weight="1"
+           android:layout_marginLeft="5dp">
+           <TextView 
+               android:id="@+id/agelbl"
+                android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+          android:textSize="16sp"
+        
+         android:textColor="#273F9F"
+               android:text="Age"
+               />
+            <EditText
+                android:id="@+id/age"
+                android:layout_width="match_parent"
+       android:layout_height="50dp"
+       android:paddingLeft="3dp"
+        android:layout_below="@+id/agelbl"
+        android:background="@drawable/text_bg"
+        android:inputType="number"
+               android:text=""
+               />
+           
+           
+       </RelativeLayout> -->
+       <RelativeLayout 
+           android:layout_width="0dp"
+           android:layout_height="match_parent"
+           android:layout_weight="1"
+           android:layout_marginLeft="5dp"
+           android:layout_marginRight="5dp">
+           <TextView 
+               android:id="@+id/edlbl"
+                android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         android:textSize="16sp"
+         android:textColor="#273F9F"
+               android:text="Education"
+               />
+            <EditText
+                android:id="@+id/education"
+                android:layout_width="match_parent"
+       android:layout_height="50dp"
+       android:paddingLeft="3dp"
+        android:layout_below="@+id/edlbl"
+        android:background="@drawable/text_bg"
+               android:text=""
+               />
+           
+       </RelativeLayout>  
+       </LinearLayout>   
+          
+         <RelativeLayout 
+           android:layout_width="0dp"
+           android:layout_height="match_parent"
+           android:layout_weight="1"
+           android:paddingRight="5dp"
+           android:layout_marginLeft="5dp"> 
+           <TextView 
+               android:id="@+id/marlbl"
+                android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         android:textSize="16sp"
+         android:textColor="#273F9F"
+               android:text="Marital Status"
+               />
+            <Spinner
+                android:id="@+id/married"
+                android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingLeft="3dp"
+        android:layout_below="@+id/marlbl"
+        
+        android:gravity="center"
+        android:background="@android:drawable/btn_dropdown"
+        android:entries="@array/mstatus"
+               />          
+           
+       </RelativeLayout>  
+       </LinearLayout>
+       
+        
+        
+        
+        
+            <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingRight="5dp"
+       android:orientation="horizontal">
+       <RelativeLayout 
+           android:layout_width="0dp"
+           android:layout_height="match_parent"
+           android:layout_weight="1"
+           android:layout_marginLeft="5dp">
+           <TextView 
+               android:id="@+id/occlbl"
+                android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         android:textSize="16sp"
+         android:textColor="#273F9F"
+               android:text="Occupation"
+               />
+            <EditText
+                android:id="@+id/occupation"
+                android:layout_width="match_parent"
+       android:layout_height="50dp"
+       android:paddingLeft="3dp"
+        android:layout_below="@+id/occlbl"
+        android:background="@drawable/text_bg"
+               android:text=""
+               />
+           
+       </RelativeLayout> 
+       
+          <RelativeLayout 
+           android:layout_width="0dp"
+           android:layout_height="match_parent"
+           android:layout_weight="1"
+           android:layout_marginLeft="5dp">
+           <TextView 
+               android:id="@+id/loclbl"
+                android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+          android:textSize="16sp"
+         android:textColor="#273F9F"
+               android:text="Location"
+               />
+            
+            
+            <Spinner
+                android:id="@+id/location"
+                android:layout_width="match_parent"
+		        android:layout_height="50dp"
+		        android:paddingLeft="3dp"
+		        android:layout_below="@+id/loclbl"     
+		        android:gravity="center"
+		        android:background="@android:drawable/btn_dropdown"
+		        android:entries="@array/location"
+               />  
+            
+           
+       </RelativeLayout> 
+       
+          
+         <RelativeLayout 
+           android:layout_width="0dp"
+           android:layout_height="match_parent"
+           android:layout_weight="1"
+           android:layout_marginLeft="5dp">
+            
+             <TextView 
+               android:id="@+id/deplbl"
+                android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         android:textSize="16sp"
+         android:textColor="#273F9F"
+               android:text="No of Dependents"
+               />
+            <EditText
+                android:id="@+id/dep"
+                android:layout_width="match_parent"
+       android:layout_height="50dp"
+       android:paddingLeft="3dp"
+        android:background="@drawable/text_bg"
+        android:layout_below="@+id/deplbl"
+        android:inputType="number"
+               android:text=""
+               />
+             
+           
+       </RelativeLayout>  
+       </LinearLayout>
+       
+            
+            
+             <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+       android:orientation="horizontal">
+       <RelativeLayout 
+           android:layout_width="0dp"
+           android:layout_height="match_parent"
+           android:layout_weight="1"
+           android:layout_marginLeft="5dp">
+            
+           <ImageView
+                 android:id="@+id/lyb"
+                 android:clickable="true"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                 android:layout_centerVertical="true"
+                 android:src="@drawable/cart" />
+
+           <TextView
+               android:id="@+id/occlbl"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_centerVertical="true"
+               android:layout_toRightOf="@+id/lyb"
+               android:text="Step 1 of 2"
+               android:textColor="#273F9F"
+               android:textSize="16sp" />
+           
+       </RelativeLayout> 
+       
+          <RelativeLayout 
+           android:layout_width="0dp"
+           android:layout_height="match_parent"
+           android:layout_weight="1"
+           android:layout_marginLeft="5dp">
+         
+           
+       </RelativeLayout>
+
+          <RelativeLayout
+              android:id="@+id/next"
+              android:layout_width="0dp"
+              android:layout_height="match_parent"
+              android:layout_marginLeft="5dp"
+              android:clickable="true"
+              android:layout_weight="1" >
+
+              <ImageView
+                  android:id="@+id/lybnxt"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_alignParentRight="true"
+                  android:layout_centerVertical="true"
+                  android:src="@drawable/cart" />
+
+              <TextView
+                  android:id="@+id/deplbl"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_centerVertical="true"
+                  android:layout_toLeftOf="@+id/lybnxt"
+                  android:text="NEXT"
+                  android:textColor="#273F9F"
+                  android:textSize="16sp" />
+          </RelativeLayout>
+  
+       </LinearLayout>
+          
+       <!-- 
+        
+       
+       
+       
+      
+       -->      
+   
+    <!--    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+       android:orientation="horizontal">
+        
+       
+       
+       
+       <RelativeLayout 
+           android:layout_width="0dp"
+           android:layout_height="match_parent"
+           android:layout_weight="1"
+           android:layout_marginLeft="5dp">
+           
+           
+       </RelativeLayout>  
+       <RelativeLayout 
+           android:layout_width="0dp"
+           android:layout_height="match_parent"
+           android:layout_weight="1"
+           android:layout_marginLeft="5dp"
+           android:layout_marginRight="5dp">
+           
+           
+       </RelativeLayout>     
+       <RelativeLayout 
+           android:layout_width="0dp"
+           android:layout_height="match_parent"
+           android:layout_weight="1"
+            android:layout_marginRight="5dp">
+           <TextView 
+               android:id="@+id/loanlbl"
+                android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+               android:text="Loan Amount"
+                android:textSize="16sp"
+         android:textColor="#273F9F"
+               />
+            <EditText
+                android:id="@+id/amount"
+                android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingLeft="3dp"
+        android:layout_below="@+id/loanlbl"
+        android:background="@drawable/text_bg"
+               android:text=""
+               />
+           
+       </RelativeLayout>         
+    </LinearLayout>
+    
+   <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+       android:orientation="horizontal">
+       <RelativeLayout 
+           android:layout_width="0dp"
+           android:layout_height="match_parent"
+           android:layout_weight="1"
+           android:layout_marginLeft="5dp">
+           <TextView 
+               android:id="@+id/marlbl"
+                android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+               android:text="Marital Status"
+                 android:textSize="16sp"
+         android:textColor="#273F9F"
+               />
+            <EditText
+                android:id="@+id/status"
+                android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingLeft="3dp"
+        android:background="@drawable/text_bg"
+        android:layout_below="@+id/marlbl"
+               android:text=""
+               />
+           
+       </RelativeLayout>  
+       
+       <RelativeLayout 
+           android:layout_width="0dp"
+           android:layout_height="match_parent"
+           android:layout_weight="1"
+            android:layout_marginRight="5dp">
+           
+           
+       </RelativeLayout>         
+    </LinearLayout>
+    
+   
+   <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+       android:orientation="horizontal">
+       <RelativeLayout 
+           android:layout_width="0dp"
+           android:layout_height="match_parent"
+           android:layout_weight="1"
+           android:layout_marginLeft="5dp">
+           <TextView 
+               android:id="@+id/inlbl"
+                android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="9sp"
+         android:textColor="#273F9F"
+               android:text="How was business initailly funded?"
+               />
+            <EditText
+                android:id="@+id/initial"
+                android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingLeft="3dp"
+        android:layout_below="@+id/inlbl"
+        android:background="@drawable/text_bg"
+               android:text=""
+               />
+           
+       </RelativeLayout>  
+       <RelativeLayout 
+           android:layout_width="0dp"
+           android:layout_height="match_parent"
+           android:layout_weight="1"
+           android:layout_marginLeft="5dp"
+           android:layout_marginRight="5dp">
+           <TextView 
+               android:id="@+id/ownlbl"
+                android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         android:textSize="9sp"
+         android:textColor="#273F9F"
+               android:text="How many owners does the business have?"
+               />
+            <EditText
+                android:id="@+id/owners"
+                android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingLeft="3dp"
+        android:layout_below="@+id/ownlbl"
+        android:background="@drawable/text_bg"
+               android:text=""
+               />
+           
+       </RelativeLayout>     
+       <RelativeLayout 
+           android:layout_width="0dp"
+           android:layout_height="match_parent"
+           android:layout_weight="1"
+            android:layout_marginRight="5dp">
+           <TextView 
+               android:id="@+id/comelbl"
+                android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         android:textSize="16sp"
+         android:textColor="#273F9F"
+               android:text="Estimated daily income"
+               />
+            <EditText
+                android:id="@+id/income"
+                android:layout_width="match_parent"
+       android:layout_height="50dp"
+       android:paddingLeft="3dp"
+        android:layout_below="@+id/comelbl"
+        android:background="@drawable/text_bg"
+               android:text=""
+               />
+           
+       </RelativeLayout>         
+    </LinearLayout>
+    
+   
+   <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+       android:orientation="horizontal">
+       <RelativeLayout 
+           android:layout_width="0dp"
+           android:layout_height="match_parent"
+           android:layout_weight="1"
+           android:layout_marginLeft="5dp">
+           <TextView 
+               android:id="@+id/namelbl"
+                android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         android:textSize="16sp"
+         android:textColor="#273F9F"
+               android:text="Estimated Daily Costs"
+               />
+            <EditText
+                android:id="@+id/costs"
+                android:layout_width="match_parent"
+       android:layout_height="50dp"
+       android:paddingLeft="3dp"
+        android:layout_below="@+id/namelbl"
+        android:background="@drawable/text_bg"
+               android:text=""
+               />
+           
+       </RelativeLayout>  
+       <RelativeLayout 
+           android:layout_width="0dp"
+           android:layout_height="match_parent"
+           android:layout_weight="1"
+           android:layout_marginLeft="5dp"
+           android:layout_marginRight="5dp">
+           <TextView 
+               android:id="@+id/namelbl"
+                android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         android:textSize="9sp"
+         android:textColor="#273F9F"
+               android:text="When did the person first register with Musoni"
+               />
+            <EditText
+                android:id="@+id/regdate"
+                android:layout_width="match_parent"
+       android:layout_height="50dp"
+       android:paddingLeft="3dp"
+        android:layout_below="@+id/namelbl"
+        android:background="@drawable/text_bg"
+               android:text=""
+               />
+           
+       </RelativeLayout>     
+       <RelativeLayout 
+           android:layout_width="0dp"
+           android:layout_height="match_parent"
+           android:layout_weight="1">
+           <TextView 
+               android:id="@+id/namelbl"
+                android:layout_width="match_parent"
+        android:layout_height="1dp"
+               android:text=""
+               />
+            <Button
+                android:id="@+id/reg"
+                android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/namelbl"
+               android:text="Register"
+               />
+           
+       </RelativeLayout>         
+    </LinearLayout>
+    -->
+    
+    
+
+</LinearLayout> 
+    
+    
+    
+
+</RelativeLayout>

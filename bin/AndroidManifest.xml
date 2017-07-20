@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.faida"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="18" />
+    
+      <uses-permission android:name="android.permission.INTERNET"/>
+      <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+      <uses-permission android:name="android.permission.BLUETOOTH" />
+      <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+     
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.faida.MainActivity"
+            android:label="@string/app_name" 
+            android:screenOrientation="landscape">
+           
+        </activity>
+        
+        <activity
+            android:name="com.example.faida.Categories"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape" >
+            
+           
+           
+        </activity>
+        <activity
+            android:name="com.example.faida.Suppliers"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape" >
+           
+        </activity>
+          <activity
+            android:name="com.example.faida.Supplier"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape" >
+           
+        </activity>
+        
+          
+        <activity
+            android:name="com.example.faida.LoanAppPart1"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape" >
+            
+           
+        </activity>
+        <activity
+            android:name="com.example.faida.LoanAppPart2"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape" >
+          
+           
+        </activity>
+         <activity
+            android:name="com.example.faida.AddToCart"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape" >
+          
+           
+        </activity>
+        <activity
+            android:name="com.example.faida.Cart"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape" >
+          
+           
+        </activity>
+        <activity
+            android:name="com.example.faida.DeviceListActivity"
+            android:label="@string/app_name"
+             android:screenOrientation="landscape" 
+             >
+          
+           
+        </activity>
+        
+         <activity
+            android:name="com.example.faida.Home"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter> 
+              
+         
+        </activity>
+        
+         <activity
+            android:name="com.example.faida.Category"
+            android:label="@string/app_name" 
+            android:screenOrientation="landscape">
+            
+        </activity>
+        <activity
+            android:name="com.example.faida.Partners"
+            android:label="@string/app_name" 
+            android:screenOrientation="landscape">
+              
+        </activity>
+        
+        <activity
+            android:name="com.example.faida.SavedCarts"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape" >
+            
+          
+        </activity>
+        
+          <activity
+            android:name="com.example.faida.SubCats"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape" >
+          
+        </activity>
+         <activity
+            android:name="com.example.faida.ProductPreview"
+            android:label="@string/app_name" 
+            android:screenOrientation="landscape">
+            
+        </activity>
+        
+         <activity
+            android:name="com.example.faida.Products"
+            android:label="@string/app_name" 
+            android:screenOrientation="landscape">
+          
+             
+             
+        </activity>
+         <activity
+            android:name="com.example.faida.CheckOut"
+            android:label="@string/app_name" 
+            android:screenOrientation="landscape">
+            
+             
+             
+        </activity>
+        <activity
+            android:name="com.example.faida.ProductDetails"
+            android:label="@string/app_name"
+           
+            android:screenOrientation="landscape" >
+            
+        </activity>
+        
+        <receiver android:name="NetListener">
+      <intent-filter>
+        <action android:name="android.net.conn.CONNECTIVITY_CHANGE" >
+      </action>
+      </intent-filter>
+   </receiver>
+    </application>
+
+</manifest>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:padding="5dp"
+    android:gravity="center"
+    android:background="@drawable/saved_listbg"
+    android:orientation="horizontal" >
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/prod_icon" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:textColor="#0f303f"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:text="Product name" />
+    <TextView
+        android:id="@+id/qty"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:gravity="left"
+        android:layout_height="wrap_content"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#0f303f"
+        android:textSize="14sp"
+        android:text="1,200 sh" />
+
+    <CheckBox
+        android:id="@+id/prodcheck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="" />
+
+</LinearLayout>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EAEAEA"
+    >
+
+
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="0dp"
+    android:orientation="horizontal" >
+
+    <ListView
+        android:id="@+id/leftnav"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2"          
+        android:scrollbars="none"
+        android:background="#EAEAEA"
+        android:dividerHeight="1dp"
+        android:divider="#EAEAEA"
+       
+        
+        
+                >
+    </ListView>
+     <!-- <GridView
+                    android:id="@+id/prods"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                     android:layout_weight="7"
+                     android:horizontalSpacing="1dp"
+                      android:stretchMode="columnWidth"
+                    android:numColumns="3" >
+                    
+                   android:paddingRight="2dp"
+        android:paddingLeft="2dp" 
+                    
+                </GridView>-->
+               <android.support.v4.view.ViewPager  
+				xmlns:tools="http://schemas.android.com/tools"  
+				android:id="@+id/pager"  
+				android:layout_width="0dp"  
+				android:layout_weight="14"
+				android:layout_height="match_parent" 
+				tools:context=".MainActivity"  >  
+  
+				<!--  
+				This title strip will display the currently visible page title, as well as the page  
+				titles for adjacent pages.  
+				  <android.support.v4.view.PagerTitleStrip  
+				android:id="@+id/pager_title_strip"  
+				android:layout_width="match_parent"  
+				android:layout_height="wrap_content"  
+				android:layout_gravity="top"  
+				android:paddingBottom="4dp" 
+				android:paddingTop="4dp" 
+				android:background="#FF6803" 
+				android:textColor="#ffffff" /> -->
+				  
+				</android.support.v4.view.ViewPager>   
+                
+                
+                
+                
+                <RelativeLayout
+                    android:layout_width="0dp"
+        android:layout_height="match_parent" 
+        android:gravity="center"   
+        android:background="#47505C"   
+        android:layout_weight="1" > 
+       <!--  <ImageView 
+            android:id="@+id/cat"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:clickable="true"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/cat_rem"/>-->
+    
+    <ListView
+        android:background="#00ffffff"
+        android:id="@+id/rightnav"
+        android:layout_width="60dp"
+        
+        android:layout_height="match_parent"
+        android:divider="#00ffffff"
+        android:paddingRight="4dp"
+        android:paddingLeft="4dp"
+        android:scrollbars="none"
+        android:dividerHeight="20dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:layout_weight="1" >
+    </ListView>
+    <ImageView 
+            android:id="@+id/checkout"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:clickable="true"   
+            android:visibility="invisible"       
+            android:layout_marginBottom="30dp"
+            android:src="@drawable/check"/>
+    </RelativeLayout>
+
+</LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E1E6F6">
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="0dp"
+    android:orientation="horizontal" >
+
+    <ListView
+        android:id="@+id/leftnav"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:divider="#EAEAEA"        
+        android:scrollbars="none"
+        android:background="#EAEAEA"
+        android:dividerHeight="1dp"
+        android:paddingRight="2dp"
+        android:paddingLeft="2dp" >
+    </ListView>
+    <LinearLayout
+      android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="3" 
+        android:background="#EAEAEA"
+        android:orientation="vertical">
+        
+       <!--  <RelativeLayout
+           android:id="@+id/prev"
+                 android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:gravity="center"
+                 >
+
+                <ImageView
+                   
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:src="@drawable/prev" />
+                </RelativeLayout>-->
+            
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp" 
+                android:layout_weight="6"
+               
+                >
+
+                <GridView
+                    android:id="@+id/cats"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scrollbars="none"
+                    android:background="#EAEAEA"
+                                      
+                    
+                    
+                    android:numColumns="3" >
+                </GridView>
+
+            </RelativeLayout>
+            
+          <!--    <RelativeLayout
+           android:id="@+id/next"
+                 android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:gravity="center"
+                 >
+            
+            
+                <ImageView
+                    
+                    android:layout_width="50dp"
+                     android:layout_height="match_parent"
+                android:layout_weight="1"    
+                android:layout_gravity="center" 
+                android:clickable="true"          
+                                   
+                    android:src="@drawable/next" />
+
+            </RelativeLayout>      --> 
+           
+                
+           
+             
+        
+        
+        
+        
+    </LinearLayout>
+
+</LinearLayout>
+</RelativeLayout>

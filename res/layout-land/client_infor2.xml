@@ -1,0 +1,445 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:paddingRight="10dp"
+        android:text="MUSONI LOAN APPLICATION FORM" 
+        android:gravity="right"/>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:paddingLeft="10dp"
+        android:layout_below="@+id/textView1"
+        android:text="LOAN DETAILS" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/textView2" 
+         android:orientation="vertical" >
+         
+        
+          <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+       android:orientation="horizontal">
+       <RelativeLayout 
+           android:layout_width="0dp"
+           android:layout_height="match_parent"
+           android:layout_weight="1"
+           android:layout_marginLeft="5dp">
+           <TextView 
+               android:id="@+id/loanlbl"
+                android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         android:textSize="16sp"
+         android:textColor="#273F9F"
+               android:text="Loan Request Size"
+               />
+
+            <EditText
+                android:id="@+id/loan"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/loanlbl"
+                android:background="@drawable/text_bg"
+                android:ems="10"
+                 android:inputType="number"
+                android:paddingLeft="3dp"
+                android:textSize="16sp" >
+
+                <requestFocus />
+            </EditText>
+           
+       </RelativeLayout> 
+       
+          
+       
+          
+         <RelativeLayout 
+           android:layout_width="0dp"
+           android:layout_height="match_parent"
+           android:layout_weight="1"
+           android:layout_marginLeft="5dp">
+
+         <TextView 
+               android:id="@+id/loanlbl"
+                android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         android:textSize="16sp"
+         android:textColor="#273F9F"
+               android:text="Loan Duration"
+               />
+
+            <EditText
+                android:id="@+id/dur"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/loanlbl"
+                android:background="@drawable/text_bg"
+                android:ems="10"
+                
+                android:paddingLeft="3dp"
+                android:textSize="16sp" >
+
+                <requestFocus />
+            </EditText>    
+           
+       </RelativeLayout>  
+       </LinearLayout>
+       
+          
+             <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+       android:orientation="horizontal">
+       <RelativeLayout 
+           android:layout_width="0dp"
+           android:layout_height="match_parent"
+           android:layout_weight="1"
+           android:layout_marginLeft="5dp">
+
+            
+
+            <TextView
+                android:id="@+id/initlbl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:text="How was the business initially funded (Loans, Savings,Daily Incomes)"
+                android:textColor="#273F9F"
+                android:textSize="10sp" />
+            <Spinner
+                android:id="@+id/initialf"
+                android:layout_width="match_parent"
+		        android:layout_height="50dp"
+		        android:paddingLeft="3dp"
+		        android:layout_below="@+id/initlbl"     
+		        android:gravity="center"
+		        android:background="@android:drawable/btn_dropdown"
+		        android:entries="@array/init"
+               />  
+           
+
+               
+        
+           
+       </RelativeLayout> 
+       
+          
+       
+          
+         <RelativeLayout 
+           android:layout_width="0dp"
+           android:layout_height="match_parent"
+           android:layout_weight="1"
+           android:layout_marginLeft="5dp">
+            <TextView
+                android:id="@+id/initlbl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:text="First time Borrower?"
+                android:textColor="#273F9F"
+                android:textSize="10sp" />
+            <Spinner
+                android:id="@+id/firstB"
+                android:layout_width="match_parent"
+		        android:layout_height="50dp"
+		        android:paddingLeft="3dp"
+		        android:layout_below="@+id/initlbl"     
+		        android:gravity="center"
+		        android:background="@android:drawable/btn_dropdown"
+		        android:entries="@array/firsttime"
+               />  
+
+             
+           
+       </RelativeLayout>  
+       </LinearLayout>
+       
+             
+             
+              <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+       android:orientation="horizontal">
+       <RelativeLayout 
+           android:layout_width="0dp"
+           android:layout_height="match_parent"
+           android:layout_weight="2"
+           android:layout_marginLeft="5dp">
+
+            
+
+            <TextView
+                android:id="@+id/ownlbl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:text="How many owners does the business have?"
+                android:textColor="#273F9F"
+                android:textSize="10sp" />
+            <Spinner
+                android:id="@+id/owners"
+                android:layout_width="match_parent"
+		        android:layout_height="50dp"
+		        android:paddingLeft="3dp"
+		        android:layout_below="@+id/ownlbl"     
+		        android:gravity="center"
+		        android:background="@android:drawable/btn_dropdown"
+		        android:entries="@array/own"
+               />
+            
+           
+       </RelativeLayout>          
+       
+          
+         <RelativeLayout 
+           android:layout_width="0dp"
+           android:layout_height="match_parent"
+           android:layout_weight="1"
+           android:layout_marginLeft="5dp">      
+           
+       </RelativeLayout>  
+       </LinearLayout>
+       
+                   
+              <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+       android:orientation="horizontal">
+       <RelativeLayout 
+           android:layout_width="0dp"
+           android:layout_height="match_parent"
+           android:layout_weight="1"
+           android:layout_marginLeft="5dp">
+            
+           <TextView
+                android:id="@+id/inclbl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:text="Estimated daily income"
+                android:textColor="#273F9F"
+                android:textSize="16sp" />
+           
+
+            <EditText
+                android:id="@+id/income"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/inclbl"
+                android:background="@drawable/text_bg"
+                 android:inputType="number"
+                android:ems="10"
+                android:paddingLeft="3dp"
+                android:textSize="16sp" >
+
+               
+            </EditText>
+
+            
+       </RelativeLayout>  
+       <RelativeLayout 
+           android:layout_width="0dp"
+           android:layout_height="match_parent"
+           android:layout_weight="1"
+           android:layout_marginLeft="5dp">
+
+           
+
+            <TextView
+                android:id="@+id/costlbl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:text="Estimated daily costs"
+                android:textColor="#273F9F"
+                android:textSize="16sp" />
+             <EditText
+                android:id="@+id/costs"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/costlbl"
+                android:background="@drawable/text_bg"
+                android:ems="10"
+                 android:inputType="number"
+                android:paddingLeft="3dp"
+                android:textSize="16sp" >
+
+            </EditText>
+           
+       </RelativeLayout>         
+       
+          
+         <RelativeLayout 
+           android:layout_width="0dp"
+           android:layout_height="match_parent"
+           android:layout_weight="1"
+           android:layout_marginLeft="5dp">      
+           
+       </RelativeLayout>  
+       </LinearLayout>
+       
+              
+                 <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+       android:orientation="horizontal">
+       <RelativeLayout 
+           android:layout_width="0dp"
+           android:layout_height="match_parent"
+           android:layout_weight="2"
+           android:layout_marginLeft="5dp">
+           <TextView 
+               android:id="@+id/name3lbl"
+                android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         android:textSize="10sp"
+         android:textColor="#273F9F"
+               android:text="When did the loanee first  register with Musoni system"
+               />
+
+            <TextView
+                android:id="@+id/regdate"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/name3lbl"
+                android:background="@drawable/text_bg"
+                android:ems="10"
+                android:gravity="center"
+                android:paddingLeft="3dp"
+                android:textSize="16sp" />
+
+              
+           
+
+            <ImageView
+                 android:id="@+id/cal"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+              android:layout_alignTop="@+id/regdate"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@+id/regdate"
+                android:clickable="true"
+                android:src="@drawable/cal" />
+           
+       </RelativeLayout> 
+       
+          
+       
+          
+         <RelativeLayout 
+           android:layout_width="0dp"
+           android:layout_height="match_parent"
+           android:layout_weight="1"
+           android:layout_marginLeft="5dp">
+            
+            
+
+             
+           
+       </RelativeLayout>  
+       </LinearLayout>
+       
+                 <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+       android:orientation="horizontal">
+       <RelativeLayout 
+           android:layout_width="0dp"
+           android:layout_height="match_parent"
+           android:layout_weight="1"
+           android:layout_marginLeft="5dp">
+            
+           <ImageView
+                 android:id="@+id/lyb"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                 android:layout_centerVertical="true"
+                 android:src="@drawable/cart" />
+
+           <TextView
+               android:id="@+id/occlbl"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_centerVertical="true"
+               android:layout_toRightOf="@+id/lyb"
+               android:text="Step 2 of 2"
+               android:textColor="#273F9F"
+               android:textSize="16sp" />
+           
+       </RelativeLayout> 
+       
+          <RelativeLayout 
+           android:layout_width="0dp"
+           android:layout_height="match_parent"
+           android:layout_weight="1"
+           android:layout_marginLeft="5dp">
+         
+           
+       </RelativeLayout>
+
+          <RelativeLayout
+              android:id="@+id/apply"
+              android:layout_width="0dp"
+              android:layout_height="match_parent"
+              android:layout_marginLeft="5dp"
+              android:layout_weight="1" 
+              android:clickable="true">
+
+              <ImageView
+                  android:id="@+id/lybnxt"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_alignParentRight="true"
+                  android:layout_centerVertical="true"
+                  android:src="@drawable/cart" />
+
+              <TextView
+                  android:id="@+id/deplbl"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_centerVertical="true"
+                  android:layout_toLeftOf="@+id/lybnxt"
+                  android:text="APPLY"
+                  android:textColor="#273F9F"
+                  android:textSize="16sp" />
+          </RelativeLayout>
+  
+       </LinearLayout>
+        
+        
+    </LinearLayout>
+
+</RelativeLayout>

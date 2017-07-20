@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#B4CDE6" 
+    android:layout_gravity="center"      
+    android:layout_height="match_parent" >
+
+
+
+
+<RelativeLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/cat_bg"
+            android:layout_margin="5dp" >
+            
+            <LinearLayout
+                android:id="@+id/payinput"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="30dp" 
+                 android:layout_marginBottom="30dp" 
+                android:orientation="horizontal">
+
+         <RelativeLayout 
+             android:id="@+id/back"
+    android:layout_width="0dp"
+    android:layout_weight="1"
+    android:clickable="true"
+    android:layout_height="match_parent"
+    android:background="@drawable/home_leftitem"
+            android:layout_margin="5dp" >
+
+             <ImageView
+                 android:id="@+id/imageView1"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_alignParentTop="true"
+                 android:layout_centerHorizontal="true"
+                 android:layout_marginTop="65dp"
+                 android:src="@drawable/toprods" />
+
+             <TextView
+                 android:id="@+id/textView1"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_below="@+id/imageView1"
+                 android:layout_centerHorizontal="true"
+                 android:layout_marginTop="17dp"
+                 android:textColor="#0000ff"
+                 android:text="TO PRODUCTS"
+                 android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            </RelativeLayout>
+      <View android:layout_width="5dp"
+          
+                             android:layout_height="1dp"/>
+      <RelativeLayout 
+            android:id="@+id/check"
+    android:layout_width="0dp"
+    android:clickable="true"
+    android:layout_weight="1"
+    android:layout_height="match_parent"
+   android:background="@drawable/home_leftitem"
+            android:layout_margin="5dp" >
+
+          <ImageView
+              android:id="@+id/imageView2"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignParentTop="true"
+              android:layout_centerHorizontal="true"
+              android:layout_marginTop="64dp"
+              android:src="@drawable/checker" />
+
+          <TextView
+              android:id="@+id/textView2"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_below="@+id/imageView2"
+              android:layout_centerHorizontal="true"
+              android:textColor="#ff0000"
+              android:layout_marginTop="17dp"
+              android:text="CHECK OUT"
+              android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            </RelativeLayout>
+
+     
+     </LinearLayout>
+     
+       
+       <!--      
+      <LinearLayout
+                           android:id="@+id/buts"
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:layout_alignParentLeft="true"
+                         android:layout_alignParentBottom="true"
+                         android:layout_marginLeft="5dp"
+                         android:layout_marginRight="5dp"
+                         android:layout_marginBottom="5dp"
+                          >
+                         <Button
+                         android:layout_width="0dp"
+                         android:layout_weight="1"
+                         android:layout_height="wrap_content"
+                         android:background="@drawable/useradd_bg"
+                         android:textColor="#ffffff"
+                             android:text="OK"/>
+                         <View android:layout_width="5dp"
+                             android:layout_height="1dp"/>
+                         <Button
+                             android:layout_width="0dp"
+                         android:layout_weight="1"
+                         android:layout_height="wrap_content"
+                         android:background="@drawable/cancelbut_bg"
+                         android:textColor="#0099F3"
+                               android:text="CANCEL"/>
+                     </LinearLayout>-->
+     
+</RelativeLayout>
+</RelativeLayout>

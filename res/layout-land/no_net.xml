@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#B4CDE6" 
+    android:layout_gravity="center"      
+    android:layout_height="match_parent" >
+
+
+
+
+<RelativeLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/cat_bg"
+            android:layout_margin="5dp" >
+            <TextView
+                android:background="#0099F3"
+         android:id="@+id/title"
+         android:layout_width="match_parent"
+         android:layout_height="50dp" 
+         android:layout_margin="5dp"  
+         android:textColor="#ffffff"     
+         android:layout_alignParentTop="true"
+         android:gravity="center"
+         android:text="NO CONNECTION !" />
+            
+            <LinearLayout
+             android:id="@+id/payinput"
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:layout_below="@+id/title"
+                         android:layout_marginLeft="5dp"
+                         android:layout_marginRight="5dp"
+                           android:layout_marginTop="30dp"              
+                        
+                          >
+    
+
+        
+      <View android:layout_width="5dp"
+                             android:layout_height="1dp"/>
+
+     
+     </LinearLayout>
+     
+       <LinearLayout
+             android:id="@+id/pay"
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:layout_below="@+id/payinput"
+                         android:layout_marginLeft="5dp"
+                         android:layout_marginRight="5dp"
+                           android:layout_marginTop="10dp"              
+                        
+                          >
+    
+
+          <TextView
+         android:id="@+id/conf"
+         android:layout_width="match_parent"
+         android:layout_weight="1"
+         android:layout_height="40dp"              
+         android:paddingLeft="5dp"    
+         android:hint="Make Connection in order to Send!!" 
+         android:gravity="center"
+         android:ems="6"
+          android:background="@drawable/text_bg"
+          >
+      
+     </TextView>
+      <View android:layout_width="5dp"
+                             android:layout_height="1dp"/>
+
+     <View
+        
+         android:layout_width="0dp"
+         android:layout_weight="1"
+         android:layout_height="1dp"
+        
+         
+         />
+     </LinearLayout>     
+            
+      <LinearLayout
+                           android:id="@+id/buts"
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:layout_alignParentLeft="true"
+                         android:layout_alignParentBottom="true"
+                         android:layout_marginLeft="5dp"
+                         android:layout_marginRight="5dp"
+                         android:layout_marginBottom="5dp"
+                          >
+                         
+                         <View android:layout_width="5dp"
+                             android:layout_height="1dp"/>
+                         
+                     </LinearLayout>
+     
+</RelativeLayout>
+</RelativeLayout>

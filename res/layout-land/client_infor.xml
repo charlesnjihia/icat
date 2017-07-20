@@ -1,0 +1,464 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+       android:orientation="horizontal">
+       <RelativeLayout 
+           android:layout_width="0dp"
+           android:layout_height="match_parent"
+           android:layout_weight="3"
+           android:layout_marginLeft="5dp">
+           <TextView 
+               android:id="@+id/namelbl"
+                android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         android:textSize="16sp"
+         android:textColor="#273F9F"
+               android:text="Name"
+               />
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/namelbl"
+        android:background="@drawable/text_bg"
+        android:paddingLeft="3dp"
+         android:textSize="16sp"
+               android:text=""
+               />
+           
+       </RelativeLayout>  
+        <RelativeLayout 
+           android:layout_width="0dp"
+           android:layout_height="match_parent"
+           android:layout_weight="1"
+           android:layout_marginLeft="5dp"
+           android:layout_marginRight="5dp">
+           <TextView 
+               android:id="@+id/idlbl"
+                android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+          android:textSize="16sp"
+         android:textColor="#273F9F"
+               android:text="ID No."
+               />
+            <EditText
+                android:id="@+id/id"
+                android:layout_width="match_parent"
+       android:layout_height="50dp"
+       android:paddingLeft="3dp"
+        android:layout_below="@+id/idlbl"
+        android:background="@drawable/text_bg"
+               android:text=""
+               />
+           
+       </RelativeLayout> 
+       
+       
+       
+       <RelativeLayout 
+           android:layout_width="0dp"
+           android:layout_height="match_parent"
+           android:layout_weight="1"
+           android:layout_marginLeft="5dp"
+           android:layout_marginRight="5dp">
+           <TextView 
+               android:id="@+id/agelbl"
+                android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+          android:textSize="16sp"
+         android:textColor="#273F9F"
+               android:text="Age"
+               />
+            <EditText
+                android:id="@+id/age"
+                android:layout_width="match_parent"
+       android:layout_height="50dp"
+       android:paddingLeft="3dp"
+        android:layout_below="@+id/agelbl"
+        android:background="@drawable/text_bg"
+               android:text=""
+               />
+           
+       </RelativeLayout>     
+       <RelativeLayout 
+           android:layout_width="0dp"
+           android:layout_height="match_parent"
+           android:layout_weight="1"
+            android:layout_marginRight="5dp">
+           <TextView 
+               android:id="@+id/genderlbl"
+                android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+          android:textSize="16sp"
+         android:textColor="#273F9F"
+               android:text="Gender"
+               />
+            <EditText
+                android:id="@+id/gender"
+                android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingLeft="3dp"
+        android:layout_below="@+id/genderlbl"
+        android:background="@drawable/text_bg"
+               android:text=""
+               />
+           
+       </RelativeLayout>         
+    </LinearLayout>
+    
+   <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+       android:orientation="horizontal">
+       
+       <RelativeLayout 
+           android:layout_width="0dp"
+           android:layout_height="match_parent"
+           android:layout_weight="1"
+           android:layout_marginLeft="5dp">
+           <TextView 
+               android:id="@+id/fnlbl"
+                android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         android:textSize="16sp"
+         android:textColor="#273F9F"
+               android:text="Phone No."
+               />
+            <EditText
+                android:id="@+id/fone"
+                android:layout_width="match_parent"
+       android:layout_height="50dp"
+        android:layout_below="@+id/fnlbl"
+        android:paddingLeft="3dp"
+        android:background="@drawable/text_bg"
+               android:text=""
+               />
+           
+       </RelativeLayout>  
+       
+       
+       
+       <RelativeLayout 
+           android:layout_width="0dp"
+           android:layout_height="match_parent"
+           android:layout_weight="1"
+           android:layout_marginLeft="5dp">
+           <TextView 
+               android:id="@+id/occlbl"
+                android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         android:textSize="16sp"
+         android:textColor="#273F9F"
+               android:text="Occupation"
+               />
+            <EditText
+                android:id="@+id/occupation"
+                android:layout_width="match_parent"
+       android:layout_height="50dp"
+       android:paddingLeft="3dp"
+        android:layout_below="@+id/occlbl"
+        android:background="@drawable/text_bg"
+               android:text=""
+               />
+           
+       </RelativeLayout>  
+       <RelativeLayout 
+           android:layout_width="0dp"
+           android:layout_height="match_parent"
+           android:layout_weight="1"
+           android:layout_marginLeft="5dp"
+           android:layout_marginRight="5dp">
+           <TextView 
+               android:id="@+id/loclbl"
+                android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+          android:textSize="16sp"
+         android:textColor="#273F9F"
+               android:text="Location"
+               />
+            <EditText
+                android:id="@+id/location"
+                android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingLeft="3dp"
+        android:layout_below="@+id/loclbl"
+        android:background="@drawable/text_bg"
+               android:text=""
+               />
+           
+       </RelativeLayout>     
+       <RelativeLayout 
+           android:layout_width="0dp"
+           android:layout_height="match_parent"
+           android:layout_weight="1"
+            android:layout_marginRight="5dp">
+           <TextView 
+               android:id="@+id/loanlbl"
+                android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+               android:text="Loan Amount"
+                android:textSize="16sp"
+         android:textColor="#273F9F"
+               />
+            <EditText
+                android:id="@+id/amount"
+                android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingLeft="3dp"
+        android:layout_below="@+id/loanlbl"
+        android:background="@drawable/text_bg"
+               android:text=""
+               />
+           
+       </RelativeLayout>         
+    </LinearLayout>
+    
+   <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+       android:orientation="horizontal">
+       <RelativeLayout 
+           android:layout_width="0dp"
+           android:layout_height="match_parent"
+           android:layout_weight="1"
+           android:layout_marginLeft="5dp">
+           <TextView 
+               android:id="@+id/marlbl"
+                android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+               android:text="Marital Status"
+                 android:textSize="16sp"
+         android:textColor="#273F9F"
+               />
+            <EditText
+                android:id="@+id/status"
+                android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingLeft="3dp"
+        android:background="@drawable/text_bg"
+        android:layout_below="@+id/marlbl"
+               android:text=""
+               />
+           
+       </RelativeLayout>  
+       <RelativeLayout 
+           android:layout_width="0dp"
+           android:layout_height="match_parent"
+           android:layout_weight="1"
+           android:layout_marginLeft="5dp"
+           android:layout_marginRight="5dp">
+           <TextView 
+               android:id="@+id/edlbl"
+                android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         android:textSize="16sp"
+         android:textColor="#273F9F"
+               android:text="Education Level"
+               />
+            <EditText
+                android:id="@+id/education"
+                android:layout_width="match_parent"
+       android:layout_height="50dp"
+       android:paddingLeft="3dp"
+        android:layout_below="@+id/edlbl"
+        android:background="@drawable/text_bg"
+               android:text=""
+               />
+           
+       </RelativeLayout>     
+       <RelativeLayout 
+           android:layout_width="0dp"
+           android:layout_height="match_parent"
+           android:layout_weight="1"
+            android:layout_marginRight="5dp">
+           <TextView 
+               android:id="@+id/deplbl"
+                android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         android:textSize="16sp"
+         android:textColor="#273F9F"
+               android:text="No of Dependents"
+               />
+            <EditText
+                android:id="@+id/dep"
+                android:layout_width="match_parent"
+       android:layout_height="50dp"
+       android:paddingLeft="3dp"
+        android:background="@drawable/text_bg"
+        android:layout_below="@+id/deplbl"
+               android:text=""
+               />
+           
+       </RelativeLayout>         
+    </LinearLayout>
+    
+   
+   <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+       android:orientation="horizontal">
+       <RelativeLayout 
+           android:layout_width="0dp"
+           android:layout_height="match_parent"
+           android:layout_weight="1"
+           android:layout_marginLeft="5dp">
+           <TextView 
+               android:id="@+id/inlbl"
+                android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="9sp"
+         android:textColor="#273F9F"
+               android:text="How was business initailly funded?"
+               />
+            <EditText
+                android:id="@+id/initial"
+                android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingLeft="3dp"
+        android:layout_below="@+id/inlbl"
+        android:background="@drawable/text_bg"
+               android:text=""
+               />
+           
+       </RelativeLayout>  
+       <RelativeLayout 
+           android:layout_width="0dp"
+           android:layout_height="match_parent"
+           android:layout_weight="1"
+           android:layout_marginLeft="5dp"
+           android:layout_marginRight="5dp">
+           <TextView 
+               android:id="@+id/ownlbl"
+                android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         android:textSize="9sp"
+         android:textColor="#273F9F"
+               android:text="How many owners does the business have?"
+               />
+            <EditText
+                android:id="@+id/owners"
+                android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingLeft="3dp"
+        android:layout_below="@+id/ownlbl"
+        android:background="@drawable/text_bg"
+               android:text=""
+               />
+           
+       </RelativeLayout>     
+       <RelativeLayout 
+           android:layout_width="0dp"
+           android:layout_height="match_parent"
+           android:layout_weight="1"
+            android:layout_marginRight="5dp">
+           <TextView 
+               android:id="@+id/comelbl"
+                android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         android:textSize="16sp"
+         android:textColor="#273F9F"
+               android:text="Estimated daily income"
+               />
+            <EditText
+                android:id="@+id/income"
+                android:layout_width="match_parent"
+       android:layout_height="50dp"
+       android:paddingLeft="3dp"
+        android:layout_below="@+id/comelbl"
+        android:background="@drawable/text_bg"
+               android:text=""
+               />
+           
+       </RelativeLayout>         
+    </LinearLayout>
+    
+   
+   <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+       android:orientation="horizontal">
+       <RelativeLayout 
+           android:layout_width="0dp"
+           android:layout_height="match_parent"
+           android:layout_weight="1"
+           android:layout_marginLeft="5dp">
+           <TextView 
+               android:id="@+id/namelbl"
+                android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         android:textSize="16sp"
+         android:textColor="#273F9F"
+               android:text="Estimated Daily Costs"
+               />
+            <EditText
+                android:id="@+id/costs"
+                android:layout_width="match_parent"
+       android:layout_height="50dp"
+       android:paddingLeft="3dp"
+        android:layout_below="@+id/namelbl"
+        android:background="@drawable/text_bg"
+               android:text=""
+               />
+           
+       </RelativeLayout>  
+       <RelativeLayout 
+           android:layout_width="0dp"
+           android:layout_height="match_parent"
+           android:layout_weight="1"
+           android:layout_marginLeft="5dp"
+           android:layout_marginRight="5dp">
+           <TextView 
+               android:id="@+id/namelbl"
+                android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         android:textSize="9sp"
+         android:textColor="#273F9F"
+               android:text="When did the person first register with Musoni"
+               />
+            <EditText
+                android:id="@+id/regdate"
+                android:layout_width="match_parent"
+       android:layout_height="50dp"
+       android:paddingLeft="3dp"
+        android:layout_below="@+id/namelbl"
+        android:background="@drawable/text_bg"
+               android:text=""
+               />
+           
+       </RelativeLayout>     
+       <RelativeLayout 
+           android:layout_width="0dp"
+           android:layout_height="match_parent"
+           android:layout_weight="1">
+           <TextView 
+               android:id="@+id/namelbl"
+                android:layout_width="match_parent"
+        android:layout_height="1dp"
+               android:text=""
+               />
+            <Button
+                android:id="@+id/reg"
+                android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/namelbl"
+               android:text="Register"
+               />
+           
+       </RelativeLayout>         
+    </LinearLayout>
+    
+    
+    
+
+</LinearLayout>
